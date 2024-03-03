@@ -1,0 +1,156 @@
+{
+    "Epicuria": {
+      "categories": [
+        {
+          "name": "Pizza",
+          "items": [
+            "Ham & Blue Cheese Pizza",
+            "Cheese Pizza",
+            "Pepperoni Pizza",
+            "Moussaka Pizza",
+            "Artichoke Cheese Pizza"
+          ]
+        },
+        {
+          "name": "Pasta",
+          "items": [
+            "Pasta Provençal w/ Mushrooms",
+            "Pasta w/ Chicken, Sun-Dried Tomatoes & Spinach",
+            "Cheese Ravioli w/ Mushroom Sauce",
+            "Fettuccine w/ Shiitake Mushroom",
+            "Pasta w/ Shrimp and Pesto",
+            "Pasta w/ Spring Vegetables",
+            "Spaghetti & Meatballs",
+            "Spaghetti w/ Eggplant, Tomatoes & Olives"
+          ]
+        },
+        {
+          "name": "Wraps & Sandwiches",
+          "items": [
+            "Pomegranate Chicken Wrap",
+            "Artichoke & Mushroom Wrap",
+            "Prosciutto Caprese Lavash Sandwich",
+            "Mushroom Pita"
+          ]
+        },
+        {
+          "name": "Salads & Sides",
+          "items": [
+            "Italian Style Broccoli & Cauliflower",
+            "Oven Roasted Herb Potatoes",
+            "Roasted Butternut Squash",
+            "Roasted Brussels Sprouts",
+            "Roasted Eggplant",
+            "Roasted Mushrooms"
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            "Italian Minestrone Soup",
+            "Tomato & Fresh Basil Soup"
+          ]
+        },
+        {
+          "name": "Desserts",
+          "items": [
+            "Apple Crumble Tart",
+            "Chocolate & Caramel Cream Cake",
+            "Gianduja Mousse",
+            "Oatmeal Raisin Cookie",
+            "Persian Butter Cookies"
+          ]
+        }
+      ]
+    },
+    "Bruin Plate": {
+      "categories": [
+        {
+          "name": "Hot Cereals",
+          "items": [
+            "Cream of Wheat",
+            "Oatmeal"
+          ]
+        },
+        {
+          "name": "Freshly Bowled",
+          "items": [
+            "Bruin Scramble (Ham & Cheddar)",
+            "Bruin Scramble (Vegetarian)"
+          ]
+        },
+        {
+          "name": "Harvest",
+          "items": [
+            "Seasoned Pork, Egg, & Kale Lavash Wrap",
+            "Scrambled Egg Whites",
+            "Scrambled Eggs",
+            "Vegan Scrambled Eggs",
+            "w/ Roasted Red Breakfast Potato Wedges"
+          ]
+        },
+        {
+          "name": "Stone Oven",
+          "items": [
+            "Whole Grain Banana Waffle",
+            "Waffle",
+            "w/ Cacao Butter",
+            "& Maple Syrup"
+          ]
+        },
+        {
+          "name": "Simply Grilled",
+          "items": [
+            "Coconut Quinoa Pancakes"
+          ]
+        },
+        {
+          "name": "Fruit",
+          "items": [
+            "Blood Oranges",
+            "Cantaloupe",
+            "Cara Cara Orange",
+            "Grapefruit",
+            "Green Grapes",
+            "Kiwi",
+            "Pineapple",
+            "Red Grapes"
+          ]
+        },
+        {
+          "name": "Sweet Bites",
+          "items": [
+            "Multi-Grain Bread",
+            "Olive Oil Mocha Bread",
+            "Raisin Walnut Bread",
+            "Vegan Banana Walnut Bread",
+            "Whole Wheat Sourdough Bread",
+            "Almond Cashew Butter",
+            "Blueberry & Roasted Red Grape Marmalade",
+            "Cacao Butter",
+            "Peanut Butter"
+          ]
+        },
+        {
+          "name": "Yogurt Bar",
+          "items": [
+            "Blueberries",
+            "Cottage Cheese",
+            "Granola",
+            "Green Grapes",
+            "Lowfat Greek Yogurt",
+            "Lowfat Raspberry Yogurt",
+            "Mango",
+            "Vegan Coconut Yogurt"
+          ]
+        },
+        {
+          "name": "Beverage Special",
+          "items": [
+            "Kiwi Water"
+          ]
+        }
+      ]
+    }
+  }
+  

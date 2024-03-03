@@ -1,0 +1,68 @@
+/* SearchBar.css */
+
+/* SearchBar.css */
+
+.search-bar {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-field {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: -1px; /* Remove the border by offsetting the margin */
+}
+
+
+/* SearchBar.css */
+
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    top: calc(100% + 5px); /* Position the suggestions below the input field */
+    left: 0; /* Align the suggestions to the left edge of the search bar */
+    width: 100%; /* Set the width of the suggestions container to match the input field */
+    background-color: #fff;
+    border: none; /* Remove the border */
+    border-top: none;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+.react-autosuggest__suggestions-list {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style-type: none; /* Remove bullet points */
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion:last-child {
+    border-bottom: none;
+}
+
+.react-autosuggest__suggestions-list li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Remove the default marker */
+}
+
+
