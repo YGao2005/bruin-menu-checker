@@ -1,0 +1,75 @@
+.table-container{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.table{
+    width: 100%;
+}
+
+.meal-period{
+    font-family: 'Source Sans 3', Montserrat;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin: 10px;
+    left: 0;
+}
+
+.menu-item-container{
+    width: 70%;
+}
+
+.menu-item {
+    text-align: left;
+    position: relative; /* Set the position to relative */
+    margin: 0rem 1rem 1rem 3.5rem;
+    font-family: 'Source Sans 3', Montserrat;
+  }
+  
+  .menu-item::before {
+    content: '\2022'; /* Unicode character for bullet point */
+    color: #000; /* Bullet point color */
+    position: absolute; /* Set the position to absolute */
+    left: -1.5em; /* Adjust the position to the left */
+  }
+
+  .restaurant-container {
+    display: flex;
+    justify-content: flex-start; /* Align content to the start (left) */
+    align-items: flex-start; /* Align items to the start (top) */
+    margin: 1rem;
+    align-self: flex-start; /* Position itself at the start (left) */
+}
+
+.restaurant{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Source Sans 3', Montserrat;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.green{
+    background-color: #517E24;
+    width: 9rem;
+}
+
+.red{
+    background-color: #7E242A;
+    width: 6rem;
+}
+
+.purple{
+    background-color: #5C247E;
+    width: 7rem;
+}

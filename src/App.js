@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import MenuChecker from './MenuChecker';
 import menuItems from './menuItems.json';
+import './App.css';
 
 function App() {
   const [searchTerms, setSearchTerms] = useState([]);
@@ -47,14 +48,23 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Menu Checker</h1>
+      <h1 class="website-title">Menu Checker</h1>
       <SearchBar suggestions={suggestions} onSearchTermChange={handleSearchTermChange} onSearchSubmit={handleSearchSubmit} />
       {searchSubmitted && (
         <div>
-          <button onClick={handleClear}>Clear</button>
+
+    
+          <div className="clear-button" onClick={handleClear}>
+            CLEAR
+          </div>
+
           {datesForNextWeek.map((date, dateIndex) => (
             <div key={dateIndex}>
-              <h2>{date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}</h2>
+              <div class="title-box">
+              <h2 class="date-title">{date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}</h2>
+              </div>
+              <div class="meals-body">
+              <div class="title-padding"></div>
               {mealTypes.map((mealType, mealIndex) => (
                 <MenuChecker
                   key={`${dateIndex}-${mealType}`}
@@ -63,6 +73,7 @@ function App() {
                   date={date.toISOString().split('T')[0]}
                 />
               ))}
+              </div>
             </div>
           ))}
         </div>

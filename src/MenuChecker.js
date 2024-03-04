@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import cheerio from 'cheerio';
+import './MenuChecker.css'; // Import the CSS file for styling
 
 function formatDate(dateString) {
     const date = new Date(dateString);
@@ -46,24 +47,39 @@ function MenuChecker({ searchTerms, mealType, date }) {
     }, [searchTerms, mealType, date]);
 
     return (
-        <div>
+        <div className="table-container">
             {restaurants.length > 0 && (
-                <div>
-                    <h2>{mealType} Menu for {formattedNextDay}</h2>
+                <div className="table">
+                    
                     {restaurants.map((restaurant, index) => (
-                        <div key={index}>
-                            <h3>{restaurant.name}</h3>
-                            <ul>
-                                {restaurant.items.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                ))}
-                            </ul>
-                        </div>
+                        <React.Fragment key={index}>
+                            <div className="meal-period">{mealType}</div>
+                            <div className='restaurant-container'><div className={`restaurant ${getRestaurantColor(restaurant.name)}`}>{restaurant.name}</div></div>
+                            <div className='menu-item-container'>
+                            {restaurant.items.map((item, idx) => (
+                                <div className="menu-item" key={idx}>{item}</div>
+                            ))}
+                            </div>
+                        </React.Fragment>
                     ))}
                 </div>
             )}
         </div>
     );
 }
+
+function getRestaurantColor(name) {
+    switch (name) {
+        case 'Bruin Plate':
+            return 'green';
+        case 'De Neve':
+            return 'red';
+        case 'Epicuria':
+            return 'purple';
+        default:
+            return '';
+    }
+}
+
 
 export default MenuChecker;

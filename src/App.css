@@ -1,38 +1,90 @@
+@font-face {
+  font-family: 'Source Sans 3'; /* Replace 'YourFontName' with the desired font name */
+  src: url('SourceSans3.ttf') format('truetype'); /* Change the path to your font file */
+  font-weight: bold;
+  font-style: normal;
+}
+
 .App {
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #dee2e5;
+  height: 100%;
+
+}
+
+.website-title{
+  margin: 0;
+  padding: 0;
+}
+
+
+.clear-button {
+  align-items: center;
+  background-color: #ffc72c;
+  border-radius: 2rem;
+  color: #000000;
+  display: flex;
+  flex-shrink: 0;
+  font-family: 'Source Sans 3', Montserrat;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 4rem;
+  justify-content: center;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
+  margin: 0rem 39.884rem 0rem 41.802rem;
+  text-align: center;
+  white-space: nowrap;
+  width: calc(100% - 81.6854rem);
+}
+
+.title-box {
+  background-color: #2774ae;
+  margin-top: 2%;
+  margin-bottom: 0;
+  height: 5rem;
+  width: 40%;
+  border-radius: 5rem;  
+  padding: 0;
+  margin-left: 30%;
+  position: relative; /* Add position relative */
+  display: flex;
+  align-items: center; /* Center vertically */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.date-title {
+  font-family: 'Source Sans 3', Montserrat;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
   color: white;
+  position: absolute; /* Position the text absolutely */
+  left: 0; /* Position the text to the left */
+  right: 55%; /* Make the text take up the remaining space */
+  margin: 0; /* Remove default margins */
 }
 
-.App-link {
-  color: #61dafb;
+.meals-body{
+  margin-top: -2.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.5rem;
+  background-color: #DAEBFE;
+  width: 40%;
+  
+  justify-content: center;
+  min-height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-padding{
+  width: 100%;
+  padding-top: 2.5rem;
 }
