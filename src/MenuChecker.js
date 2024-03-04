@@ -13,7 +13,6 @@ function MenuChecker({ searchTerms, mealType, date, printedMealPeriods }) {
     const [restaurants, setRestaurants] = useState([]);
     const nextDay = new Date(date);
     nextDay.setDate(nextDay.getDate() + 1); // Calculate the next day's date
-    const formattedNextDay = formatDate(nextDay.toISOString().split('T')[0]); // Format the next day's date
 
     useEffect(() => {
         async function fetchMenus() {
