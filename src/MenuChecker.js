@@ -3,11 +3,6 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import './MenuChecker.css'; // Import the CSS file for styling
 
-function formatDate(dateString) {
-    const date = new Date(dateString);
-    const options = { weekday: 'long', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('en-US', options);
-}
 
 function MenuChecker({ searchTerms, mealType, date, printedMealPeriods }) {
     const [restaurants, setRestaurants] = useState([]);
@@ -19,7 +14,6 @@ function MenuChecker({ searchTerms, mealType, date, printedMealPeriods }) {
             try {
                 const response = await axios.get(`https://menu.dining.ucla.edu/Menus/${date}/${mealType}`);
                 const $ = cheerio.load(response.data);
-
                 const restaurantMenus = [];
                 $('.menu-block.half-col, .menu-block.third-col').each((index, element) => {
                     const restaurantName = $(element).find('h3.col-header').text();
