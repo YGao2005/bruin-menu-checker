@@ -1,70 +1,16 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Our Website
+https://main--bruin-menu-checker.netlify.app/
+## Inspiration
+We often find ourselves clicking through different dining hall menus, searching for one item in particular, which can take a lot of time. We thought other students might have this experience too, so we decided to create a website that would tell them when their favorite dishes would be offered! Our website could also help those trying to eat healthier or trying to incorporate certain foods into their diet, and we hope users find it useful!
+## What it does
+Our website prompts the user to type in the dishes they're searching for, and suggestions pop up under the search bar with menu items that include the keyword entered. The user can input multiple menu items to see their availability all at the same time, or clear the result to check out each item individually. After entering, the dish appears under the dining halls that offer them during certain meal periods for the next six days!
+## How we built it
+We used React framework, html, css, and Javascript to design and implement the logic for the script. The user inputs a menu item using a text box provided by React's Autosuggest and we linked an external JSON file that we wrote to output suggested search option. Using react to scour the detailed bruin menu, we checked the html for keywords that the user inputs. Upon finding the keyword, it will display the menu item on the webpage. 
+## Challenges we ran into
+We found front-end development to be especially challenging, as we had no prior experience. We had a two person team and we both inexperienced in CS (CS31 and CS32 students) so we lacked a lot of knowledge about conventional code writing, using libraries, frameworks, and formatting CSS. CSS was especially difficult since we have both only learned back-end code, so we essentially went in blind and used trial and error. 
+## Accomplishments that we're proud of
+We're proud of the websites functionality! We'll definitely be using the website in the future, and we hope other's will too! We're also proud of how we communicated throughout the process to come up with a design, implementation, and final product. Even though we struggled through the CSS, we were pretty happy with the eventual appearance of our website and it looks clean while working effectively. 
+## What we learned
+We learned that coding is challenging but also super fun! We gained lots of hands on experience working with css, js, and html for the first time, and we learned so much invaluable information.
+## What's next for Bruin Menu Checker
+We hope to expand to other residential dining halls! We hope to account for more menu items in our suggested item search as we had to manually input each item into a JSON file. We also hope to improve the speed of the website so the user can get a quicker response upon searching for an item.
