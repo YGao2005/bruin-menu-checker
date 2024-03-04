@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Autosuggest from 'react-autosuggest';
-import './SearchBar.css'; // Import the CSS file for styling
+import './SearchBar.css';
 
-function SearchBar({ suggestions, onSearchTermChange, onSearchSubmit }) {
+function SearchBar({ suggestions, onSearchSubmit }) {
   const [value, setValue] = useState('');
   const [suggestionsList, setSuggestionsList] = useState([]);
 
   const getSuggestions = (inputValue) => {
     const inputValueLowerCase = inputValue.trim().toLowerCase();
-    return suggestions.filter(suggestion =>
+    return suggestions.filter((suggestion) =>
       suggestion.toLowerCase().includes(inputValueLowerCase)
     );
   };
@@ -18,29 +18,37 @@ function SearchBar({ suggestions, onSearchTermChange, onSearchSubmit }) {
   };
 
   const onSuggestionsFetchRequested = ({ value }) => {
-    setSuggestionsList(getSuggestions(value));
+    setSuggestionsList(getSuggestions(value)); // Remove slicing to include all suggestions
   };
 
   const onSuggestionsClearRequested = () => {
     setSuggestionsList([]);
   };
 
-  const getSuggestionValue = (suggestion) => {
-    return suggestion;
+  const onSuggestionSelected = (event, { suggestionValue }) => {
+    onSearchSubmit(suggestionValue);
+    setValue('');
+    setSuggestionsList([]);
   };
 
-  const onKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      event.preventDefault(); // Prevent form submission
-      onSearchSubmit(value); // Trigger search submission
-      setValue(''); // Clear input field after submission
+  const handleSubmit = () => {
+    if (value.trim() !== '') {
+      onSearchSubmit(value);
+      setValue('');
+      setSuggestionsList([]);
     }
   };
 
-  const onSuggestionSelected = (event, { suggestionValue }) => {
-    event.preventDefault(); // Prevent form submission
-    onSearchSubmit(suggestionValue); // Trigger search submission
-    setValue(''); // Clear input field after submission
+  const inputProps = {
+    placeholder: 'Enter search term',
+    value,
+    onChange,
+    onKeyDown: (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault(); // Prevent form submission
+        handleSubmit();
+      }
+    }
   };
 
   return (
@@ -49,16 +57,21 @@ function SearchBar({ suggestions, onSearchTermChange, onSearchSubmit }) {
         suggestions={suggestionsList}
         onSuggestionsFetchRequested={onSuggestionsFetchRequested}
         onSuggestionsClearRequested={onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
+        getSuggestionValue={(suggestion) => suggestion}
         renderSuggestion={(suggestion) => <div>{suggestion}</div>}
-        inputProps={{
-          placeholder: 'Enter search term',
-          value,
-          onChange,
-          onKeyDown,
-        }}
+        inputProps={inputProps}
         onSuggestionSelected={onSuggestionSelected}
+        theme={{
+          input: 'input-field',
+          suggestionsContainer: 'react-autosuggest__suggestions-container',
+          suggestionsList: 'react-autosuggest__suggestions-list',
+          suggestion: 'suggestion',
+          suggestionHighlighted: 'suggestion-highlighted' // Add this line to highlight suggestions
+        }}
       />
+      <div className="submit-button-background" onClick={handleSubmit}>
+        <p className="enter-text">ENTER</p>
+      </div>
     </div>
   );
 }

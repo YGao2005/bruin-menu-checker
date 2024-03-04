@@ -1,68 +1,116 @@
-/* SearchBar.css */
-
-/* SearchBar.css */
-
-.search-bar {
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('SourceSans3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .search-bar {
     position: relative;
     display: inline-block;
-}
-
-.input-container {
+  }
+  
+  .input-container {
     position: relative;
-}
-
-.input-field {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
+  }
+  
+  .input-field {
+    width: 400px;
+    padding: 15px;
+    font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: -1px; /* Remove the border by offsetting the margin */
-}
-
-
-/* SearchBar.css */
-
-.react-autosuggest__suggestions-container {
+    margin-bottom: -1px;
+  }
+  
+  .react-autosuggest__suggestions-container {
     position: absolute;
-    top: calc(100% + 5px); /* Position the suggestions below the input field */
-    left: 0; /* Align the suggestions to the left edge of the search bar */
-    width: 100%; /* Set the width of the suggestions container to match the input field */
+    top: calc(100%); 
+    left: 0;
+    width: 100%;
     background-color: #fff;
-    border: none; /* Remove the border */
+    border: none;
     border-top: none;
     border-radius: 5px;
     z-index: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
-}
-
-
-.react-autosuggest__suggestions-list {
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    list-style-type: none; /* Remove bullet points */
-}
-
-.suggestion {
+  }
+  
+  .react-autosuggest__suggestions-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .suggestion {
+    height: 40px;
     padding: 10px;
     cursor: pointer;
     border-bottom: 1px solid #ccc;
-}
-
-.suggestion:hover {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-family: 'Source Sans 3', Montserrat;
+  }
+  
+  .suggestion:hover {
     background-color: #f0f0f0;
-}
-
-.suggestion:last-child {
+  }
+  
+  .suggestion:last-child {
     border-bottom: none;
-}
-
-.react-autosuggest__suggestions-list li {
+  }
+  
+  .react-autosuggest__suggestions-list li {
     margin: 0;
     padding: 0;
-    list-style-type: none; /* Remove the default marker */
-}
-
-
+    list-style-type: none;
+  }
+  
+  .search-box-background {
+    background-color: #dee2e5;
+    border-radius: 25px;
+    width: 430px;
+    padding: 10px;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .submit-button-background {
+    background-color: #2774ae;
+    border-radius: 50px;
+    width: 120px;
+    height: 45px;
+    padding: 10px;
+    position: absolute;
+    left: calc(100% - 130px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .enter-text {
+    color: #ffffff;
+    font-family: 'Source Sans 3', Montserrat;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1;
+  }
+  
+  .suggestion-highlighted {
+    background-color: #f0f0f0;
+  }
+  

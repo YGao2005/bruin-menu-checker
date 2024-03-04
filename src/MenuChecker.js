@@ -9,7 +9,7 @@ function formatDate(dateString) {
     return date.toLocaleDateString('en-US', options);
 }
 
-function MenuChecker({ searchTerms, mealType, date }) {
+function MenuChecker({ searchTerms, mealType, date, printedMealPeriods }) {
     const [restaurants, setRestaurants] = useState([]);
     const nextDay = new Date(date);
     nextDay.setDate(nextDay.getDate() + 1); // Calculate the next day's date
@@ -46,14 +46,16 @@ function MenuChecker({ searchTerms, mealType, date }) {
         fetchMenus();
     }, [searchTerms, mealType, date]);
 
+    // Check if the meal period for the current day has already been printed
+    const mealPeriodAlreadyPrinted = printedMealPeriods.has(mealType);
+
     return (
         <div className="table-container">
             {restaurants.length > 0 && (
                 <div className="table">
-                    
+                    {!mealPeriodAlreadyPrinted && <div className="meal-period">{mealType}</div>}
                     {restaurants.map((restaurant, index) => (
                         <React.Fragment key={index}>
-                            <div className="meal-period">{mealType}</div>
                             <div className='restaurant-container'><div className={`restaurant ${getRestaurantColor(restaurant.name)}`}>{restaurant.name}</div></div>
                             <div className='menu-item-container'>
                             {restaurant.items.map((item, idx) => (
@@ -80,6 +82,5 @@ function getRestaurantColor(name) {
             return '';
     }
 }
-
 
 export default MenuChecker;

@@ -1,156 +1,417 @@
 {
     "Epicuria": {
-      "categories": [
-        {
-          "name": "Pizza",
-          "items": [
-            "Ham & Blue Cheese Pizza",
-            "Cheese Pizza",
-            "Pepperoni Pizza",
-            "Moussaka Pizza",
-            "Artichoke Cheese Pizza"
-          ]
-        },
-        {
-          "name": "Pasta",
-          "items": [
-            "Pasta Provençal w/ Mushrooms",
-            "Pasta w/ Chicken, Sun-Dried Tomatoes & Spinach",
-            "Cheese Ravioli w/ Mushroom Sauce",
-            "Fettuccine w/ Shiitake Mushroom",
-            "Pasta w/ Shrimp and Pesto",
-            "Pasta w/ Spring Vegetables",
-            "Spaghetti & Meatballs",
-            "Spaghetti w/ Eggplant, Tomatoes & Olives"
-          ]
-        },
-        {
-          "name": "Wraps & Sandwiches",
-          "items": [
-            "Pomegranate Chicken Wrap",
-            "Artichoke & Mushroom Wrap",
-            "Prosciutto Caprese Lavash Sandwich",
-            "Mushroom Pita"
-          ]
-        },
-        {
-          "name": "Salads & Sides",
-          "items": [
-            "Italian Style Broccoli & Cauliflower",
-            "Oven Roasted Herb Potatoes",
-            "Roasted Butternut Squash",
-            "Roasted Brussels Sprouts",
-            "Roasted Eggplant",
-            "Roasted Mushrooms"
-          ]
-        },
-        {
-          "name": "Soups",
-          "items": [
-            "Italian Minestrone Soup",
-            "Tomato & Fresh Basil Soup"
-          ]
-        },
-        {
-          "name": "Desserts",
-          "items": [
-            "Apple Crumble Tart",
-            "Chocolate & Caramel Cream Cake",
-            "Gianduja Mousse",
-            "Oatmeal Raisin Cookie",
-            "Persian Butter Cookies"
-          ]
-        }
-      ]
+        "categories": [
+            {
+                "name": "Pizza",
+                "items": [
+                    "Ham & Blue Cheese Pizza",
+                    "Cheese Pizza",
+                    "Pepperoni Pizza",
+                    "Moussaka Pizza",
+                    "Artichoke Cheese Pizza"
+                ]
+            },
+            {
+                "name": "Pasta",
+                "items": [
+                    "Pasta Provençal w/ Mushrooms",
+                    "Pasta w/ Chicken, Sun-Dried Tomatoes & Spinach",
+                    "Cheese Ravioli w/ Mushroom Sauce",
+                    "Fettuccine w/ Shiitake Mushroom",
+                    "Pasta w/ Shrimp and Pesto",
+                    "Pasta w/ Spring Vegetables",
+                    "Spaghetti & Meatballs",
+                    "Spaghetti w/ Eggplant, Tomatoes & Olives"
+                ]
+            },
+            {
+                "name": "Wraps & Sandwiches",
+                "items": [
+                    "Pomegranate Chicken Wrap",
+                    "Artichoke & Mushroom Wrap",
+                    "Prosciutto Caprese Lavash Sandwich",
+                    "Mushroom Pita"
+                ]
+            },
+            {
+                "name": "Salads & Sides",
+                "items": [
+                    "Italian Style Broccoli & Cauliflower",
+                    "Oven Roasted Herb Potatoes",
+                    "Roasted Butternut Squash",
+                    "Roasted Brussels Sprouts",
+                    "Roasted Eggplant",
+                    "Roasted Mushrooms"
+                ]
+            },
+            {
+                "name": "Soups",
+                "items": [
+                    "Italian Minestrone Soup",
+                    "Tomato & Fresh Basil Soup"
+                ]
+            },
+            {
+                "name": "Desserts",
+                "items": [
+                    "Apple Crumble Tart",
+                    "Chocolate & Caramel Cream Cake",
+                    "Gianduja Mousse",
+                    "Oatmeal Raisin Cookie",
+                    "Persian Butter Cookies"
+                ]
+            }
+        ]
     },
     "Bruin Plate": {
-      "categories": [
-        {
-          "name": "Hot Cereals",
-          "items": [
-            "Cream of Wheat",
-            "Oatmeal"
-          ]
-        },
-        {
-          "name": "Freshly Bowled",
-          "items": [
-            "Bruin Scramble (Ham & Cheddar)",
-            "Bruin Scramble (Vegetarian)"
-          ]
-        },
-        {
-          "name": "Harvest",
-          "items": [
-            "Seasoned Pork, Egg, & Kale Lavash Wrap",
-            "Scrambled Egg Whites",
-            "Scrambled Eggs",
-            "Vegan Scrambled Eggs",
-            "w/ Roasted Red Breakfast Potato Wedges"
-          ]
-        },
-        {
-          "name": "Stone Oven",
-          "items": [
-            "Whole Grain Banana Waffle",
-            "Waffle",
-            "w/ Cacao Butter",
-            "& Maple Syrup"
-          ]
-        },
-        {
-          "name": "Simply Grilled",
-          "items": [
-            "Coconut Quinoa Pancakes"
-          ]
-        },
-        {
-          "name": "Fruit",
-          "items": [
-            "Blood Oranges",
-            "Cantaloupe",
-            "Cara Cara Orange",
-            "Grapefruit",
-            "Green Grapes",
-            "Kiwi",
-            "Pineapple",
-            "Red Grapes"
-          ]
-        },
-        {
-          "name": "Sweet Bites",
-          "items": [
-            "Multi-Grain Bread",
-            "Olive Oil Mocha Bread",
-            "Raisin Walnut Bread",
-            "Vegan Banana Walnut Bread",
-            "Whole Wheat Sourdough Bread",
-            "Almond Cashew Butter",
-            "Blueberry & Roasted Red Grape Marmalade",
-            "Cacao Butter",
-            "Peanut Butter"
-          ]
-        },
-        {
-          "name": "Yogurt Bar",
-          "items": [
-            "Blueberries",
-            "Cottage Cheese",
-            "Granola",
-            "Green Grapes",
-            "Lowfat Greek Yogurt",
-            "Lowfat Raspberry Yogurt",
-            "Mango",
-            "Vegan Coconut Yogurt"
-          ]
-        },
-        {
-          "name": "Beverage Special",
-          "items": [
-            "Kiwi Water"
-          ]
-        }
-      ]
+        "categories": [
+            {
+                "name": "Hot Cereals",
+                "items": [
+                    "Cream of Wheat",
+                    "Oatmeal"
+                ]
+            },
+            {
+                "name": "Freshly Bowled",
+                "items": [
+                    "Bruin Scramble (Ham & Cheddar)",
+                    "Bruin Scramble (Vegetarian)"
+                ]
+            },
+            {
+                "name": "Harvest",
+                "items": [
+                    "Seasoned Pork, Egg, & Kale Lavash Wrap",
+                    "Scrambled Egg Whites",
+                    "Scrambled Eggs",
+                    "Vegan Scrambled Eggs",
+                    "w/ Roasted Red Breakfast Potato Wedges"
+                ]
+            },
+            {
+                "name": "Stone Oven",
+                "items": [
+                    "Whole Grain Banana Waffle",
+                    "Waffle",
+                    "w/ Cacao Butter",
+                    "& Maple Syrup"
+                ]
+            },
+            {
+                "name": "Simply Grilled",
+                "items": [
+                    "Coconut Quinoa Pancakes"
+                ]
+            },
+            {
+                "name": "Fruit",
+                "items": [
+                    "Blood Oranges",
+                    "Cantaloupe",
+                    "Cara Cara Orange",
+                    "Grapefruit",
+                    "Kiwi",
+                    "Pineapple",
+                    "Red Grapes"
+                ]
+            },
+            {
+                "name": "Sweet Bites",
+                "items": [
+                    "Multi-Grain Bread",
+                    "Olive Oil Mocha Bread",
+                    "Raisin Walnut Bread",
+                    "Vegan Banana Walnut Bread",
+                    "Whole Wheat Sourdough Bread",
+                    "Almond Cashew Butter",
+                    "Blueberry & Roasted Red Grape Marmalade",
+                    "Cacao Butter",
+                    "Peanut Butter"
+                ]
+            },
+            {
+                "name": "Yogurt Bar",
+                "items": [
+                    "Blueberries",
+                    "Cottage Cheese",
+                    "Granola",
+                    "Lowfat Greek Yogurt",
+                    "Lowfat Raspberry Yogurt",
+                    "Mango",
+                    "Vegan Coconut Yogurt"
+                ]
+            },
+            {
+                "name": "Beverage Special",
+                "items": [
+                    "Kiwi Water"
+                ]
+            },
+            {
+                "name": "Appetizers",
+                "items": [
+                    "Cilantro Rice",
+                    "Corn & Lima Bean Succotash",
+                    "Spicy Peruvian Chicken",
+                    "Grilled Tri-color Carrots w/ Peruvian Salsa Verde",
+                    "Roasted Broccoli w/ Garlic",
+                    "California Pasta Salad",
+                    "Golden Beet & Greens Salad w/ Blood Orange Mint Vinaigrette",
+                    "Habanero-Garlic Tofu, Squash, & Radicchio Salad",
+                    "Spicy Coleslaw"
+                ]
+            },
+            {
+                "name": "Soups",
+                "items": [
+                    "Beef & Barley Soup",
+                    "Corn & Leek Soup",
+                    "The Front Burner"
+                ]
+            },
+            {
+                "name": "Peruvian Delights",
+                "items": [
+                    "Peruvian Style Beef w/ Potato",
+                    "Peruvian Vegan Chicken w/ Potatoes",
+                    "Lemon Pepper Chicken w/ Quinoa Pilaf",
+                    "Tallarines Verdes w/ Walnut Pesto Sauce"
+                ]
+            },
+            {
+                "name": "Pizza",
+                "items": [
+                    "Cheese Pizza",
+                    "Garlic Chicken Pizza",
+                    "Pepperoni Pizza",
+                    "Chicken Ranch Pizza",
+                    "Sundried Tomato Pesto Pizza",
+                    "Pepperoni Deluxe Pizza",
+                    "Creole Chicken Pizza",
+                    "Mushroom Pizza"
+                ]
+            },
+            {
+                "name": "Burgers & Sandwiches",
+                "items": [
+                    "Brunch Burger",
+                    "D.F.C.",
+                    "Bruin Burger",
+                    "Bruin Cheeseburger",
+                    "Impossible Burger",
+                    "LA Hot Chicken Sandwich",
+                    "SoCal Burger",
+                    "Col. Karapet's Yardbird Cruncher",
+                    "Tabasco Beef Burger",
+                    "Shrimp Po Boy Sandwich"
+                ]
+            },
+            {
+                "name": "Breakfast Classics",
+                "items": [
+                    "Oatmeal",
+                    "Wheatena",
+                    "Pancakes",
+                    "Breakfast Hash Brown",
+                    "Fried Eggs",
+                    "Belgian Waffle w/ Bananas Foster & Blueberry Topping",
+                    "Egg Benedict Sandwich",
+                    "Bodega Egg & Bacon Roll",
+                    "Tator Tots",
+                    "Grits",
+                    "French Toast",
+                    "Ham & Cheese Omelet",
+                    "Cheese Omelet",
+                    "Bacon",
+                    "Belgian Waffle w/ Maple Syrup",
+                    "Tex-Mex Eggs Benedict",
+                    "Chocolate Cinnamon Cream Cheese Coffee Cake",
+                    "Glazed Donut",
+                    "Mini Cinnamon Roll"
+                ]
+            },
+            {
+                "name": "Salads & Sides",
+                "items": [
+                    "De La Olla Beans",
+                    "Rice Pilaf",
+                    "Lemon Garlic Chicken Thighs",
+                    "Roasted Cauliflower",
+                    "Sautéed Mushrooms",
+                    "Charred Cruciferous Salad w/ Cotija Cheese & Almonds",
+                    "Country Potato Salad",
+                    "Pineapple",
+                    "Honeydew Melon",
+                    "Watermelon"
+                ]
+            },
+            {
+                "name": "Soups & Stews",
+                "items": [
+                    "Broccoli Cheddar Soup",
+                    "Split Pea Soup with Ham",
+                    "Hominy & Butter Bean Stew",
+                    "Mushroom Almond Rice",
+                    "Cajun Chicken Wings w/ Carrot Sticks & Celery Sticks",
+                    "Hush Puppy",
+                    "NOLA Style Blackened Market Fish w/ Garlicky Green Beans"
+                ]
+            },
+            {
+                "name": "Desserts",
+                "items": [
+                    "Cherry Almond Crumble Pie",
+                    "Chocolate Ganache Cake",
+                    "Chocolate Silk Pie",
+                    "Red Velvet Brownie",
+                    "Snickerdoodle Cookies",
+                    "Vegan Apple Crisp",
+                    "Tres Leches Cake",
+                    "Vegan Cranberry Apple Crisp",
+                    "White Chocolate Chip Cookie w/ Cranberries",
+                    "White Chocolate Raspberry Pie",
+                    "White Cupcake",
+                    "Chocolate Banana Bread Pudding",
+                    "Chocolate Chip Cookie",
+                    "Coffee Toffee Pie",
+                    "Peach Crisp"
+                ]
+            }
+        ]
+    },
+        "De Neve": {
+        "categories": [
+            {
+                "name": "Appetizers",
+                "items": [
+                    "Cilantro Rice",
+                    "Corn & Lima Bean Succotash",
+                    "Spicy Peruvian Chicken",
+                    "Grilled Tri-color Carrots w/ Peruvian Salsa Verde",
+                    "Roasted Broccoli w/ Garlic",
+                    "California Pasta Salad",
+                    "Golden Beet & Greens Salad w/ Blood Orange Mint Vinaigrette",
+                    "Habanero-Garlic Tofu, Squash, & Radicchio Salad",
+                    "Spicy Coleslaw"
+                ]
+            },
+            {
+                "name": "Soups",
+                "items": [
+                    "Beef & Barley Soup",
+                    "Corn & Leek Soup",
+                    "The Front Burner"
+                ]
+            },
+            {
+                "name": "Peruvian Delights",
+                "items": [
+                    "Peruvian Style Beef w/ Potato",
+                    "Peruvian Vegan Chicken w/ Potatoes",
+                    "Lemon Pepper Chicken w/ Quinoa Pilaf",
+                    "Tallarines Verdes w/ Walnut Pesto Sauce"
+                ]
+            },
+            {
+                "name": "Pizza",
+                "items": [
+                    "Cheese Pizza",
+                    "Garlic Chicken Pizza",
+                    "Pepperoni Pizza",
+                    "Chicken Ranch Pizza",
+                    "Sundried Tomato Pesto Pizza",
+                    "Pepperoni Deluxe Pizza",
+                    "Creole Chicken Pizza",
+                    "Mushroom Pizza"
+                ]
+            },
+            {
+                "name": "Burgers & Sandwiches",
+                "items": [
+                    "Brunch Burger",
+                    "D.F.C.",
+                    "Bruin Burger",
+                    "Bruin Cheeseburger",
+                    "Impossible Burger",
+                    "LA Hot Chicken Sandwich",
+                    "SoCal Burger",
+                    "Col. Karapet's Yardbird Cruncher",
+                    "Tabasco Beef Burger",
+                    "Shrimp Po Boy Sandwich"
+                ]
+            },
+            {
+                "name": "Breakfast Classics",
+                "items": [
+                    "Oatmeal",
+                    "Wheatena",
+                    "Pancakes",
+                    "Breakfast Hash Brown",
+                    "Fried Eggs",
+                    "Belgian Waffle w/ Bananas Foster & Blueberry Topping",
+                    "Egg Benedict Sandwich",
+                    "Bodega Egg & Bacon Roll",
+                    "Tator Tots",
+                    "Grits",
+                    "French Toast",
+                    "Ham & Cheese Omelet",
+                    "Cheese Omelet",
+                    "Bacon",
+                    "Belgian Waffle w/ Maple Syrup",
+                    "Tex-Mex Eggs Benedict",
+                    "Chocolate Cinnamon Cream Cheese Coffee Cake",
+                    "Glazed Donut",
+                    "Mini Cinnamon Roll"
+                ]
+            },
+            {
+                "name": "Salads & Sides",
+                "items": [
+                    "De La Olla Beans",
+                    "Rice Pilaf",
+                    "Lemon Garlic Chicken Thighs",
+                    "Roasted Cauliflower",
+                    "Sautéed Mushrooms",
+                    "Charred Cruciferous Salad w/ Cotija Cheese & Almonds",
+                    "Country Potato Salad",
+                    "Pineapple",
+                    "Honeydew Melon",
+                    "Watermelon"
+                ]
+            },
+            {
+                "name": "Soups & Stews",
+                "items": [
+                    "Broccoli Cheddar Soup",
+                    "Split Pea Soup with Ham",
+                    "Hominy & Butter Bean Stew",
+                    "Mushroom Almond Rice",
+                    "Cajun Chicken Wings w/ Carrot Sticks & Celery Sticks",
+                    "Hush Puppy",
+                    "NOLA Style Blackened Market Fish w/ Garlicky Green Beans"
+                ]
+            },
+            {
+                "name": "Desserts",
+                "items": [
+                    "Cherry Almond Crumble Pie",
+                    "Chocolate Ganache Cake",
+                    "Chocolate Silk Pie",
+                    "Red Velvet Brownie",
+                    "Snickerdoodle Cookies",
+                    "Vegan Apple Crisp",
+                    "Tres Leches Cake",
+                    "Vegan Cranberry Apple Crisp",
+                    "White Chocolate Chip Cookie w/ Cranberries",
+                    "White Chocolate Raspberry Pie",
+                    "White Cupcake",
+                    "Chocolate Banana Bread Pudding",
+                    "Chocolate Chip Cookie",
+                    "Coffee Toffee Pie",
+                    "Peach Crisp"
+                ]
+            }
+        ]
     }
-  }
-  
+}

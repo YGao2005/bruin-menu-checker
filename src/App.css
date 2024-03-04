@@ -4,6 +4,21 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Source Sans 3 Normal'; /* Replace 'YourFontName' with the desired font name */
+  src: url('SourceSans3.ttf') format('truetype'); /* Change the path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Bebas Neue'; /* Replace 'YourFontName' with the desired font name */
+  src: url('BebasNeue-Regular.ttf') format('truetype'); /* Change the path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .App {
   text-align: center;
@@ -23,6 +38,12 @@ body{
   padding: 0;
 }
 
+.subtitle{
+  font-family: 'Source Sans 3 Normal', Montserrat;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  margin-top: -0.2rem;
+}
 
 .clear-button {
   align-items: center;
@@ -38,10 +59,10 @@ body{
   justify-content: center;
   letter-spacing: 0.02rem;
   line-height: 1.25;
-  margin: 0rem 39.884rem 0rem 41.802rem;
+  margin: 2rem auto;
   text-align: center;
   white-space: nowrap;
-  width: calc(100% - 81.6854rem);
+  width: 8rem;
 }
 
 .title-box {
@@ -60,13 +81,15 @@ body{
 }
 
 .date-title {
+  width: 100%;
   font-family: 'Source Sans 3', Montserrat;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: white;
   position: absolute; /* Position the text absolutely */
   left: 0; /* Position the text to the left */
-  right: 55%; /* Make the text take up the remaining space */
+  right: 100%; /* Make the text take up the remaining space */
   margin: 0; /* Remove default margins */
 }
 
@@ -88,3 +111,16 @@ body{
   width: 100%;
   padding-top: 2.5rem;
 }
+
+.welcome-to-bruin-menu-checker-cK8 {
+  color: #1f1f1f;
+  font-family: 'Bebas Neue', 'Source Sans Pro';
+  font-size: 4rem; /* Adjusted font size */
+  font-weight: 500;
+  text-align: center; /* Center-align the text */
+  line-height: 1; /* Adjusted line height */
+  max-width: 100%; /* Allow the text to take full width if needed */
+  margin: 1rem auto; /* Center the text horizontally */
+  text-transform: uppercase;
+ }
+ 
